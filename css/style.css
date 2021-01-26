@@ -1,0 +1,172 @@
+/*------------------------------------
+共通
+------------------------------------*/
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin:auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.cover {
+  padding: 0em;
+  max-width: 800px;
+  margin:auto;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+/*------------------------------------
+header
+------------------------------------*/
+p.header_content {
+  text-align: center;
+  background: #AB3C50;
+  color: #ffffff;
+  padding: 0.8em;
+  font-family: 'Playfair Display', serif;
+}
+
+.top_img img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+}
+
+.top_name {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 0.6em 0em;
+  background: #ffffffa3;
+  margin: 1em auto;
+  border-radius: 999px;
+}
+
+/*------------------------------------
+app
+------------------------------------*/
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.app_item {
+  width: 25%;
+  text-align: center;
+  padding-bottom: 1.2em;
+}
+
+.md_item {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 1.2em;
+}
+
+.md_item img {
+  width: 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgb(161, 161, 161);
+}
+
+p.app_title {
+  font-size: 13px;
+  padding-top: 8px;
+  color: #000000
+}
+
+.app_item img {
+  width: 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgb(161, 161, 161);
+}
+
+.app_left {
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 50%;
+}
+
+.app_right {
+  width: 50%;
+  float: right;
+  justify-content: space-around;
+
+}
+
+.app_memo {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 0 auto;
+  width: 240px;
+  height: 160px;
+}
+
+.app_memo_title::before {
+  content:"";
+	display:inline-block;
+	width: 20px;
+  height: 20px;
+	background:url(../img/icon.png) no-repeat;
+  background-size:contain;
+  position: relative;
+  top: 4px;
+}
+.app_memo_title {
+  padding-bottom: 6px;
+  font-size: 14px;
+}
+
+.app_memo_content {
+  font-size: 12px;
+  margin-top: 2px;
+  line-height: 17px;
+}
+
+.app_bt {
+  display: flex;
+  background: rgba(255, 255, 255, 0.582);
+  border-radius: 999px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.8em 3.6em;
+  position: relative;
+}
+
+.app_bt img {
+  width: 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgb(161, 161, 161);
+}
+
+.bt_item {
+  width: 100%;
+  text-align: center;
+}
+
+/*=====================================
+スマホ用の表示
+======================================*/
+@media only screen and (max-width:560px) {
+  .app_memo {
+    width: 140px;
+  }
+  
+}
